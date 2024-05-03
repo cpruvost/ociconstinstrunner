@@ -1,14 +1,17 @@
 terraform {
   required_providers {
     oci = {
+      #Use the last version as you want
       version = "~> 5.39.0"
       #version = "~> 4.112.0"
     }
   }
 
   #OCI Terraform Stack does not support last version
-  required_version = "~> 1.7.3"
-  #required_version = "~> 1.2.9"
+  #required_version = "~> 1.7.3"
+  
+  #Version for OCI Stack
+  required_version = "~> 1.2.9"
 }
 
 module "containerinstance" {

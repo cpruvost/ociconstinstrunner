@@ -1,6 +1,6 @@
 # Terraform Automation on Oracle Cloud : Create x GitHub SelfHosted Runner (for an Organisation) in Container Instances (public network)
 
-This project has been designed to run with Oracle OCI Stacks Resource Manager. Nevertheless you can use it on another place but you have to uncomment some security variables needed outside of OCI Stacks Resource Manager. 
+This project has been designed to run with Oracle OCI Stacks Resource Manager. Nevertheless you can use it on another place but you have to uncomment some security variables needed outside of OCI Stacks Resource Manager (see files variables.tf, provider.tf, and main.tf) 
 
 ## Prerequisites
 
