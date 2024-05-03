@@ -8,10 +8,10 @@ terraform {
   }
 
   #OCI Terraform Stack does not support last version
-  #required_version = "~> 1.7.3"
+  required_version = "~> 1.7.3"
   
   #Version for OCI Stack
-  required_version = "~> 1.2.9"
+  #required_version = "~> 1.2.9"
 }
 
 module "containerinstance" {

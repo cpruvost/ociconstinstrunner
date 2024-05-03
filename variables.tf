@@ -1,23 +1,23 @@
 ### Start : These information are needed only outside of OCI Terraform Stack Manager
-# variable "tenancy_ocid" {
-#     description = "The OCI Tenancy ocid"
-#     type        = string
-# }
+variable "tenancy_ocid" {
+    description = "The OCI Tenancy ocid"
+    type        = string
+}
 
-# variable "user_ocid" {
-#     description = "The OCI User ocid"
-#     type        = string
-# }
+variable "user_ocid" {
+    description = "The OCI User ocid"
+    type        = string
+}
 
-# variable "fingerprint" {
-#     description = "The Fingerprint of the OCI API Key"
-#     type        = string
-# }
+variable "fingerprint" {
+    description = "The Fingerprint of the OCI API Key"
+    type        = string
+}
 
-# variable "private_key_path" {
-#     description = "The Path of the OCI API Key"
-#     type        = string
-# }
+variable "private_key_path" {
+    description = "The Path of the OCI API Key"
+    type        = string
+}
 ### End : These information are needed only outside of OCI Terraform Stack Manager
 
 variable "region" {
@@ -104,7 +104,7 @@ variable "ci_container_env_variables" {
   default     = {
     RUNNER_SCOPE                 = null
     ORG_NAME                     = null
-    ACCESS_TOKEN                 = null
+    #ACCESS_TOKEN                 = null
   }
 }
 

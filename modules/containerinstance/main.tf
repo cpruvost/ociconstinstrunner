@@ -77,7 +77,7 @@ variable "ci_container_env_variables" {
   default     = {
     RUNNER_SCOPE                 = null
     ORG_NAME                     = null
-    ACCESS_TOKEN                 = null
+    #ACCESS_TOKEN                 = null
   }
 }
 
@@ -99,7 +99,7 @@ data "oci_secrets_secretbundle" "bundle" {
 resource "oci_container_instances_container_instance" "this" {
   count = var.ci_count
   compartment_id           = var.compartment_ocid
-  display_name             = var.ci_name
+  display_name             = "${var.ci_name}${count.index}"
   availability_domain      = "${lookup(data.oci_identity_availability_domains.ADs.availability_domains[0], "name")}"
   container_restart_policy = var.ci_restart_policy
   state                    = var.ci_state
